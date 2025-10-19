@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* Simplified compatibility for v4 border color change */
+@layer base {
+  *,
+  ::before,
+  ::after {
+    border-color: hsl(var(--border-color, #e5e7eb)); /* Default to gray-200 */
+  }
+}
